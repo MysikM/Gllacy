@@ -1,0 +1,17 @@
+body{
+  background-color: #849d8f;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.catalog{
+  background-image: url(../img/background.png);
+}
+.container-shadow{
+  margin: 0;
+  box-sizing: content-box;
+}
+ul{
+  margin: 0;
+  padding-top: 18px;
+}
