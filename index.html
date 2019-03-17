@@ -16,7 +16,15 @@
                       <img  width="154" height="64" src="img/logo.svg" alt="logo">
                     </a>
                         <ul class="menu">
-                          <li class="menu__item">Каталог</li>
+                          <li class="menu__item catalog"> Каталог
+                            <ul class="hover">
+                              <li class="dis">Новинки</li>
+                              <li> <a class="links" href="#">Сливочные</a> </li>
+                              <li> <a class="links active" href="#">Щербеты</a> </li>
+                              <li> <a class="links" href="#">Фруктовый лед</a> </li>
+                              <li> <a class="links" href="#">Мелорин</a> </li>
+                            </ul>
+                          </li>
                           <li class="menu__item">Доставка и оплата</li>
                           <li class="menu__item">О Компании</li>
                         </ul>
@@ -36,6 +44,9 @@
                           		S11,4.019,11,6.5S8.981,11,6.5,11z"/>
                           </g>
                           </svg>
+                          <div class="hover__search">
+                                <input class="type__search" type="text" name="" placeholder="Что ищем?">
+                          </div>
                         </li>
                         <li class="icon input">
                           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -49,6 +60,19 @@
                           </g>
                           </svg>
                             <span class="text">Вход</span>
+                            <div class="log-in">
+                                <form class="sign" action="index.html" method="post">
+                                    <input class="input" type="text" name="" placeholder="Электронная почта">
+                                    <input class="input" type="text" name="" placeholder="Пароль">
+                                    <div class="container">
+                                        <input class="button" type="button" name="get" value="Войти">
+                                        <div>
+                                            <a class="remember" href="#">Забыли пароль?</a>
+                                            <a class="regist" href="#">Новая регистрация</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </li>
                         <li class="icon basket">
                           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
