@@ -13,7 +13,7 @@
               <header class="header">
                   <nav class="main-nav">
                     <a class="logo" href="#">
-                      <img  width="154" height="64" src="" alt="logo">
+                      <img  width="154" height="64" src="img/logo.svg" alt="logo">
                     </a>
                         <ul class="menu">
                           <li class="menu__item">Каталог</li>
@@ -23,28 +23,69 @@
                   </nav>
                   <nav class="sign-nav">
                       <ul class="login">
-                        <li class="icon">Search</li>
-                        <li class="icon">Вход</li>
-                        <li class="icon">Пусто</li>
+                        <li class="icon search">
+                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
+                          	 height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+                          <g id="Layer_1">
+                          	<image overflow="visible" width="17" height="17" >
+                          	</image>
+                          </g>
+                          <g id="Layer_2">
+                          	<path fill="#FFFFFF" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
+                          		S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2
+                          		S11,4.019,11,6.5S8.981,11,6.5,11z"/>
+                          </g>
+                          </svg>
+                        </li>
+                        <li class="icon input">
+                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          	 width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+                          <image overflow="visible" width="21" height="19">
+                          </image>
+                          <g>
+                          	<polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
+                          	<path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"
+                          		/>
+                          </g>
+                          </svg>
+                            <span class="text">Вход</span>
+                        </li>
+                        <li class="icon basket">
+                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                          	 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                          <g>
+                          	<path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+                          		L17.372,13z"/>
+                          	<circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/>
+                          	<circle fill="#FFFFFF" cx="15.984" cy="18" r="2"/>
+                          </g>
+                          </svg>
+                          <span class="text">Пусто</span>
+                        </li>
                       </ul>
+                      <h3 class="address">
+                        <span class="small">С 10 до 20, ежедневно</span> <br>
+                      8 812 450-25-25 </h3>
                   </nav>
               </header>
               <main class="main">
                   <section class="slider">
-                    <section class="slide-">
-                      <img class="ince-cream" src="" alt="ice-cream">
-                      <b class="text">Крем-брюле и пломбир с малиновым джемом</b>
-                      <a class="button" href="#">Давайте оба!</a>
+                    <section class="slide-1">
+                      <!-- <img class="ince-cream" src="img/slide-1.png" alt="ice-cream"> -->
+                      <div class="text__container">
+                          <b class="text">Крем-брюле и пломбир <br> с малиновым джемом</b>
+                          <a class="button" href="#">Давайте оба!</a>
+                      </div>
                     </section>
                     <section class="slide-2">
-                      <img class="ince-cream" src="" alt="ice-cream">
+                      <!-- <img class="ince-cream" src="img/slide-2.png" alt="ice-cream"> -->
                       <b class="text">Шоколадный пломбир и лимонный сорбет</b>
-                      <a class="button" href="#">Давайте оба!</a>
+                      <button class="button" type="button" href="#">Давайте оба!</button>
                     </section>
                     <section class="slide-3">
-                      <img class="ince-cream" src="" alt="ice-cream">
+                      <!-- <img class="ince-cream" src="img/slide-3.png" alt="ice-cream"> -->
                       <b class="text">Пломбир с помадкой и клубничный щербет</b>
-                      <a class="button" href="#">Давайте оба!</a>
+                      <button class="button" type="button" href="#">Давайте оба!</button>
                     </section>
                   </section>
                   <section class="sale">
@@ -68,36 +109,56 @@
                   <section class="product-line">
                           <ul class="list">
                               <li class="product hit">
-                                  <img class="image" src="" alt="">
+                                  <img class="image" width="267" height="267" src="img/item-1.png" alt="">
                                   <h3 class="price">310₽<span class="slow">/кг</span></h3>
-                                  <p class="discription">
+                                  <p class="discription__text">
+                                      <a href="#" class="discription">
                                     Сливочное с апельсиновым джемом
                                         и цитрусовой стружкой
+                                      </a>
                                   </p>
+                                  <div class="hover">
+                                      <button class="button" type="button" name="button">Быстрый простмотр</button>
+                                  </div>
                               </li>
                               <li class="product hit">
-                                  <img class="image" src="" alt="">
+                                  <img class="image" width="267" height="267" src="img/item-2.png" alt="">
                                   <h3 class="price">380₽<span class="slow">/кг</span></h3>
-                                  <p class="discription">
+                                  <p class="discription__text">
+                                    <a href="#" class="discription">
                                     Сливочно-кофейное с кусочками
                                             шоколада
+                                    </a>
                                   </p>
+                                  <div class="hover">
+                                      <button class="button" type="button" name="button">Быстрый простмотр</button>
+                                  </div>
                               </li>
                               <li class="product hit">
-                                  <img class="image" src="" alt="">
-                                  <h3 class="price">355₽<span class="slow">/кгкг</span></h3>
-                                  <p class="discription">
+                                  <img class="image" width="267" height="267" src="img/item-3.png" alt="">
+                                  <h3 class="price">355₽<span class="slow">/кг</span></h3>
+                                  <p class="discription__text">
+                                    <a href="#" class="discription">
                                         Сливочно-клубничное с
                                     присыпкой из белого шоколада
+                                    </a>
                                   </p>
+                                  <div class="hover">
+                                      <button class="button" type="button" name="button">Быстрый простмотр</button>
+                                  </div>
                               </li>
                               <li class="product hit">
-                                  <img class="image" src="" alt="">
+                                  <img class="image" width="267" height="267" src="img/item-4.png" alt="">
                                   <h3 class="price">415₽<span class="slow">/кг</span></h3>
-                                  <p class="discription">
+                                  <p class="discription__text">
+                                    <a href="#" class="discription">
                                     Сливочное крем-брюле с
                                     карамельной подливкой
+                                    </a>
                                   </p>
+                                  <div class="hover">
+                                      <button class="button" type="button" name="button">Быстрый простмотр</button>
+                                  </div>
                               </li>
                           </ul>
                   </section>
@@ -107,14 +168,21 @@
                           производства на развес
                         </b>
                         <ul class="list-info">
-                          <li class="list__item">
+                          <li class="list__item ice-cream">
                             <p class="info">
                               Все наше мороженое изготавливается на собственном
                               производстве, с использованием современного оборудования
                               и проверенных временем технологий.
                             </p>
                           </li>
-                          <li class="list__item">
+                          <li class="list__item cow">
+                            <p class="info">
+                              Закупка ингредиентов  производится только у проверенных
+                              фермерских хозяйств и компаний, с которыми нас связывает
+                              долговременное сотрудничество.
+                            </p>
+                          </li>
+                          <li class="list__item list">
                             <p class="info">
                               Для приготовления мороженого используются настоящие
                               сливки и молоко высочайшего качества. Все дополнительные
@@ -122,14 +190,7 @@
                               экологически чистого сырья
                             </p>
                           </li>
-                          <li class="list__item">
-                            <p class="info">
-                              Закупка ингредиентов  производится только у проверенных
-                              фермерских хозяйств и компаний, с которыми нас связывает
-                              долговременное сотрудничество.
-                            </p>
-                          </li>
-                          <li class="list__item">
+                          <li class="list__item temp">
                             <p class="info">
                               Доставка нашего мороженого до заказчиков осуществляется
                               в специальном термопаке, который не дает мороженому
@@ -140,66 +201,129 @@
                   </section>
                   <section class="news-write-us">
                       <article class="news">
-                        <h5 class="title"></h5>
-                        <b class="text">
+                        <h5 class="title">
+                          Новое в нашем блоге
+                        </h5>
+                        <a href="#" class="text">
                           10 способов сервировки <br>
                           фруктовых щербетов к   <br>
                           столу
-                        </b>
+                        </a>
                       </article>
                       <section class="write-us">
-                            <p class="text">
-                              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-                              всего самого вкусного, что у нас происходит. Обещаем не спамить
-                              и не слать всякой ненужной ерунды. Честно =)
-                            </p>
-                            <form class="form" action="index.html" method="post">
-                              <input class="mail" type="email" name="email" placeholder="Электронная почта">
-                              <button class="button" type="button" name="button">Отправить</button>
-                            </form>
+                                <p class="text">
+                                  Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+                                  всего самого вкусного, что у нас происходит. Обещаем не спамить
+                                  и не слать всякой ненужной ерунды. Честно =)
+                                </p>
+                                <form class="form" action="index.html" method="post">
+                                  <input class="mail" type="email" name="email" placeholder="Электронная почта">
+                                  <button class="button" type="button" name="button">Отправить</button>
+                                </form>
+                                <div class="container">
+                            </div>
                       </section>
                   </section>
               </main>
           </div>
           <section class="map">
-            <img src="" alt="map">
-            <div class="form">
-                <p class="text">
-                  Адрес главного офиса
-                  и офлайн-магазина:
-                  <span class="big">
-                    ул. Большая Конюшенная
-                    19/8, Санкт-Петербург
-                  </span>
-                </p>
-                <p class="text">
-                  Для заказов по телефону:
-                  <span class="big">
-                    8 812 450-25-25
-                  </span>
-                  (с 10 до 20 ежедневно)
-                </p>
-                <button class="button" type="button" name="button">Форма обратной связи</button>
+            <img src="img/map.png" width="100%" alt="map">
+            <div class="container__form">
+                  <form class="form" action="index.html" method="post">
+                    <p class="text">
+                      Адрес главного офиса <br>
+                      и офлайн-магазина: <br>
+                      <span class="big">
+                        ул. Большая Конюшенная <br>
+                        19/8, Санкт-Петербург
+                      </span>
+                    </p>
+                    <p class="text">
+                      Для заказов по телефону: <br>
+                      <span class="big">
+                        8 812 450-25-25
+                      </span>
+                  <br>  (с 10 до 20 ежедневно)
+                    </p>
+                    <button class="button" type="button" name="button">Форма обратной связи</button>
+                  </form>
             </div>
           </section>
           <div class="wrap">
               <footer class="footer">
                   <ul class="feedback">
-                    <li><a href="#" class="icon"></a></li>
-                    <li><a href="#" class="icon"></a></li>
-                    <li><a href="#" class="icon"></a></li>
-                    <li><a href="#" class="icon"></a></li>
+                    <li><a href="#" >
+                      <svg class="icon" version="1.1" width="32" height="32" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0{fill:#FFFFFF;}
+                      </style>
+                      <g id="Layer_1">
+                      </g>
+                      <g id="Layer_2">
+                        <path class="st0" d="M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16c8.8,0,16-7.2,16-16C32,7.2,24.8,0,16,0z M23.9,12.8
+                          c-0.3,6.5-3.5,10.8-11,10.7c-0.1,0-0.2,0-0.2,0c0,0,0,0,0,0c0,0-0.1,0-0.2,0c-0.4,0-4.5-0.4-5.3-1.8c2.5,0.2,4.2-0.4,5.1-1.1
+                          c-1-0.3-2.9-0.5-3.3-2.8c0.4,0.1,0.6,0.2,1.3,0.1C9,17,7.5,16.3,7.6,14.2c0.3,0.3,1.2,0.5,1.5,0.5c-0.8-0.2-2.1-3.2-1-4.8
+                          c2,1.8,4.1,3.5,7.8,3.6c0.2-2.2,1.2-3.7,3.2-4.3c1.8-0.5,3.3,0.3,3.9,1.1c0.7-0.2,1.5-0.5,2.2-0.7c0,0.8-0.6,1.5-0.9,1.7
+                          c0.7,0.2,1.4-0.5,1.4-0.5C25.5,11.8,24.6,12.6,23.9,12.8z"/>
+                      </g>
+                      </svg>
+                    </a></li>
+                    <li><a href="#" >
+                      <svg class="icon" version="1.1" width="32" height="32" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0{fill:#FFFFFF;}
+                      </style>
+                      <g>
+                        <path class="st0" d="M20.9,16c0,2.7-2.2,4.9-4.9,4.9S11,18.7,11,16c0-0.4,0.1-0.8,0.1-1.1h-0.9v6.8h11.4v-6.8h-0.9
+                          C20.9,15.2,20.9,15.6,20.9,16z"/>
+                        <path class="st0" d="M16,18.7c1.5,0,2.7-1.2,2.7-2.7s-1.2-2.7-2.7-2.7s-2.7,1.2-2.7,2.7S14.5,18.7,16,18.7z"/>
+                        <rect x="18.6" y="10.3" class="st0" width="3" height="3"/>
+                        <path class="st0" d="M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16c8.8,0,16-7.2,16-16C32,7.2,24.8,0,16,0z M24,21.7
+                          c0,1.3-1,2.3-2.3,2.3H10.3C9,24,8,23,8,21.7V10.3C8,9,9,8,10.3,8h11.4c1.3,0,2.3,1,2.3,2.3L24,21.7L24,21.7z"/>
+                      </g>
+                      </svg>
+                    </a></li>
+                    <li><a href="#" >
+                        <svg class="icon" version="1.1" width="32" height="32" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                        <style type="text/css">
+                          .st0{fill:#FFFFFF;}
+                        </style>
+                        <path class="st0" d="M16,0C7.2,0,0,7.2,0,16s7.2,16,16,16c8.8,0,16-7.2,16-16S24.8,0,16,0z M20.1,9.5h-3v3.4h3v3.4h-3V25h-3v-8.6h-3
+                          v-3.4h3V9.5C14,7.6,15.4,6,17,6h3L20.1,9.5L20.1,9.5z"/>
+                        </svg>
+                    </a></li>
+                    <li><a href="#" >
+                      <svg class="icon" version="1.1" width="32" height="32" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0{fill:#FFFFFF;}
+                      </style>
+                      <g>
+                        <path class="st0" d="M16.6,14.5c0.4,0,0.7-0.1,1-0.2c0.3-0.1,0.5-0.3,0.6-0.6s0.1-0.5,0.1-0.8c0-0.2-0.1-0.5-0.2-0.7
+                          s-0.3-0.4-0.6-0.5c-0.3-0.1-0.6-0.2-1-0.2c-0.4,0-0.9,0-1.7,0h-0.3v3h0.6C15.7,14.5,16.2,14.5,16.6,14.5z"/>
+                        <path class="st0" d="M18.1,17.1C17.8,17,17.4,17,17,17c-0.5,0-1,0-1.6,0h-0.8v3.5h0.3c1,0,1.7,0,2.2,0c0.4,0,0.8-0.1,1.2-0.2
+                          c0.4-0.2,0.6-0.4,0.8-0.6s0.2-0.6,0.2-0.9c0-0.4-0.1-0.8-0.3-1C18.8,17.4,18.5,17.2,18.1,17.1z"/>
+                        <path class="st0" d="M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16c8.8,0,16-7.2,16-16C32,7.2,24.8,0,16,0z M22.6,20.5
+                          c-0.3,0.5-0.6,1-1.1,1.3c-0.6,0.4-1.2,0.7-1.8,0.9S18.2,23,17.1,23H11V9h5.4c1.1,0,2,0,2.5,0.1c0.5,0.1,1,0.2,1.6,0.5
+                          c0.5,0.3,0.9,0.6,1.2,1.1c0.3,0.5,0.4,1,0.4,1.6c0,0.7-0.2,1.3-0.5,1.8c-0.4,0.5-0.9,0.9-1.5,1.2v0.1c0.9,0.2,1.6,0.6,2.2,1.1
+                          s0.8,1.3,0.8,2.3C23,19.4,22.9,20,22.6,20.5z"/>
+                      </g>
+                      </svg>
+                    </a></li>
                   </ul>
 
 
                   <ul class="menu">
-                    <li class="list"><a href="" class="link">Для поставщиков</a></li>
-                    <li class="list"><a href="" class="link">О производстве </a></li>
+                    <li class="list"><a href="" class="link help">Для поставщиков</a></li>
                     <li class="list"><a href="" class="link">Наши документы</a></li>
+                    <li class="list"><a href="" class="link">О производстве </a></li>
                     <li class="list"><a href="" class="link">Экологические стандарты</a></li>
                   </ul>
 
-                  <span class="mysik">Mysik</span>
+                  <a href="#" class="mysik">Mysik</a>
               </footer>
             </div>
           </div>
